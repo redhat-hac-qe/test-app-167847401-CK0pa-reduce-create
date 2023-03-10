@@ -1,0 +1,21 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: java-quarkus-167847401
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: java-quarkus-167847401
+    app.kubernetes.io/part-of: test-app-167847401
+  name: java-quarkus-167847401
+  namespace: gpynjnmb-tenant
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: java-quarkus-167847401
+    weight: null
+status: {}
